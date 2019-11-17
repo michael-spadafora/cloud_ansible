@@ -14,6 +14,12 @@ elasticsearch:
 		then
 		ansible-playbook elasticsearchSetup.yml
 
+
+mongo:
+	run:
+		ansible-galaxy install manala.mongodb
+		ansible-playbook mongoSetup.yml
+
 cassandra:
 	run:
 		ansible-galaxy install geerlingguy.java

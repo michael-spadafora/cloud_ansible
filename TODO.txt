@@ -1,0 +1,12 @@
+nginx reverse proxy config files
+- for node js
+- for main server
+- for DB files
+
+nginx load balance config file
+
+cassandra open port
+
+elasticsearch open port
+
+Mongo install

@@ -1,0 +1,4 @@
+- hosts: mongo
+  roles:
+    - role: manala.mongodb
+      become: true
