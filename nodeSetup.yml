@@ -1,0 +1,24 @@
+---
+- hosts: all
+  become: true
+  become_method: sudo
+  
+  tasks:
+    - name: Node.js - Get script
+      get_url:
+        url: "http://deb.nodesource.com/setup_6.x"
+        dest: "/tmp/nodejs.sh"
+
+    - name: Node.js - Set execution permission to script
+      file:
+        path: "/tmp/nodejs.sh"
+        mode: "u+x"
+
+    - name: Node.js - Execute installation script
+      shell: "/tmp/nodejs.sh"
+
+    - name: Node.js - Install Node.js
+      apt: name={{ item }} state=present update_cache=yes
+      with_items:
+        - build-essential
+        - nodejs
