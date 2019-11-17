@@ -1,7 +1,7 @@
 ---
 - name: Example Playbook for the locp.cassandra Role
 
-  hosts: all
+  hosts: cassandra
 
   remote_user: root
 

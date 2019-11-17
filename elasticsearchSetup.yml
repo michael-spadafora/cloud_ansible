@@ -1,5 +1,5 @@
 - name: Elasticsearch with custom configuration
-  hosts: all
+  hosts: elasticsearch
   roles:
     - role: elastic.elasticsearch
   vars:
