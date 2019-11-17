@@ -1,3 +1,13 @@
+edit hosts file to properly mark servers
+
+nginx:
+	run:
+		ansible-playbook nginxSetup.yml
+
+node:
+	run:
+		ansible-playbook nodeSetup.yml
+
 elasticsearch:
 	run:
 		ansible-galaxy install elastic.elasticsearch,7.4.1
