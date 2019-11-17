@@ -1,0 +1,9 @@
+- hosts: all
+  vars:
+    # set cluster_name before running the playbook for the first time; never change it afterwards
+    cassandra_cluster_name: my_cluster
+    cassandra_keyspaces:
+      - my_keyspace1
+  roles:
+    - role: abelboldu.cassandra
+      become: yes

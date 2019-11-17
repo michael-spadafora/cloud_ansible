@@ -1,0 +1,7 @@
+- hosts: all
+  roles:
+    - role: geerlingguy.java
+      become: yes
+    - role: geerlingguy.ntp
+      become: yes
+
