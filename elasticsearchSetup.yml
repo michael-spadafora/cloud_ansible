@@ -9,11 +9,7 @@
     es_config:
       node.name: "node1"
       cluster.name: "custom-cluster"
-      discovery.seed_hosts: "localhost:9301"
-      http.port: 9201
-      transport.port: 9301
       node.data: false
       node.master: true
       bootstrap.memory_lock: true
     es_heap_size: 1g
-    es_api_port: 9201

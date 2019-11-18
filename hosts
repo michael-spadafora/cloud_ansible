@@ -15,7 +15,6 @@
 130.245.168.58 ansible_user=ubuntu
 
 [elasticsearch]
-130.245.168.250 ansible_user=ubuntu
-130.245.168.58 ansible_user=ubuntu
+130.245.168.208 ansible_user=ubuntu
 
 
