@@ -21,12 +21,4 @@ mongo:
 		ansible-playbook mongoSetup.yml
 
 cassandra:
-	run:
-		ansible-galaxy install geerlingguy.java
-		ansible-playbook javaSetup.yml
-		
-		then
-
-		ansible-galaxy install locp.cassandra
-		from https://galaxy.ansible.com/locp/cassandra
-		ansible-playbook cassandraSetup.yml
+	https://docs.google.com/document/d/1hZEnWb4HPldS6Pi7muSdb9sML6wiOzqQERH4eL69Nhs/edit
